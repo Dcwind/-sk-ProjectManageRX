@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Projects from './Components/Projects';
 
 class App extends Component {
-  Constructor(){
+  constructor(){
     this.state = {
       projects: [
         {
