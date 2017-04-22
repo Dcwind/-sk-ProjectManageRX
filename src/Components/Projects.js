@@ -6,7 +6,9 @@ class Projects extends Component {
     let projectItem;
     if(this.props.projects){
       projectItem = this.props.projects.map(projects => {
-        console.log(projects);
+       return (
+         <projectItem project={project}/>
+       );
       });
     }
     return (
