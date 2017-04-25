@@ -3,6 +3,7 @@ import ProjectItem from './ProjectItem';
 
 class Projects extends Component {
   render() {
+  
     let projectItem;
     if(this.props.projects){
       projectItem = this.props.projects.map(project => {
