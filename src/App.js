@@ -9,10 +9,9 @@ class App extends Component {
     }
   }
 
-  ComponentWillMount() {
-      this.setState({
-        projects: [ 
-          {
+  componentWillMount() {
+      this.setState({ projects: [
+        {
             title: 'Business Website',
             category: 'Web Design'
           },
@@ -24,8 +23,7 @@ class App extends Component {
             title: 'Coffee Shop Logo',
             category: 'Logo Design'
           }
-        ]
-      });
+      ]});
   }
 
   render() {
