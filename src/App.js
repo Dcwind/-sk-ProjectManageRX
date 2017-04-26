@@ -17,8 +17,8 @@ class App extends Component {
             category: 'Web Design'
           },
           {
-            title: 'Clinic Website',
-            category: 'Web Design'
+            title: 'Stock App',
+            category: 'Mobile App Development'
           },
           {
             title: 'Coffee Shop Logo',
