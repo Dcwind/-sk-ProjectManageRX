@@ -7,7 +7,7 @@ class AddProject extends Component {
   }
   render() {
   let categoryOptions = this.props.categories.map(category => {
-    return <option value="category" key={category}>{category}</option>
+    return <option key={category} value="category" >{category}</option>
   });
     return (
       <div >
@@ -19,7 +19,9 @@ class AddProject extends Component {
           </div>
           <div>
             <label >Category</label> <br />
-            <select name="" ref="category"></select>
+            <select  ref="category">
+              {categoryOptions}
+            </select>
           </div>
         </form>
       </div>
