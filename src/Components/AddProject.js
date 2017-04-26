@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 
 
 class AddProject extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      newProject: {}
+    }
+  }
+
   static defaultProps = {
     categories: ['Web Design', 'Mobile App Development', 'Logo Design' ]
   }
