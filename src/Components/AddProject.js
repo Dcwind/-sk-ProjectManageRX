@@ -16,7 +16,9 @@ class AddProject extends Component {
 
   submitHandler (e) {
     e.preventDefault();
-    console.log("submitted");
+    if (this.refs.title.value ===''){
+      alert("Title is required");
+    };
   }
 
   render() {
@@ -26,7 +28,7 @@ class AddProject extends Component {
     return (
       <div >
         <h3>Add Project</h3>
-        <form onSubmit={this.submitHandler}>
+        <form onSubmit={this.submitHandler.bind(this)}>
           <div>
             <label >Title</label> <br />
             <input type="text" ref="title" />
