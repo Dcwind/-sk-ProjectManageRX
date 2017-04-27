@@ -24,13 +24,16 @@ class AddProject extends Component {
           title: this.refs.title.value,
           category: this.refs.category.value
         }
+      }, function(){
+        //console.log(this.state)
+        this.props.addProject(this.state.newProject); 
       });
     };
   }
 
   render() {
   let categoryOptions = this.props.categories.map(category => {
-    return <option key={category} value="category" >{category}</option>
+    return <option key={category} value={category} >{category}</option>
   });
     return (
       <div >
