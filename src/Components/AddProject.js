@@ -27,6 +27,7 @@ class AddProject extends Component {
       }, function(){
         //console.log(this.state)
         this.props.addProject(this.state.newProject); 
+        this.refs.title.value = '';
       });
     };
   }
